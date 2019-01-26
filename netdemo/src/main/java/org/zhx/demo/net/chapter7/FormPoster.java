@@ -1,6 +1,7 @@
 package org.zhx.demo.net.chapter7;
 
-import org.zhx.source.net.QueryString;
+
+import org.zhx.demo.net.chapter4.QueryString;
 
 import java.io.*;
 import java.net.MalformedURLException;
@@ -68,7 +69,7 @@ public class FormPoster {
             }
         }
 
-        org.zhx.source.net.FormPoster poster = new org.zhx.source.net.FormPoster(url);
+        FormPoster poster = new FormPoster(url);
         poster.add("name", "Elliotte Rusty Harold");
         poster.add("email", "elharo@ibiblio.org");
 
